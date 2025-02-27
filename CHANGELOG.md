@@ -1,5 +1,37 @@
 # History of changes
 
+## Version 1.4.0 (2025-02-27)
+
+### Issues Closed
+
+* [Issue 278](https://github.com/spyder-ide/qtawesome/issues/278) - Release QtAwesome 1.4.0
+* [Issue 275](https://github.com/spyder-ide/qtawesome/issues/275) - Update Codicon to 0.0.36 and fix update script ([PR 276](https://github.com/spyder-ide/qtawesome/pull/276) by [@dalthviz](https://github.com/dalthviz))
+* [Issue 264](https://github.com/spyder-ide/qtawesome/issues/264) - FileNotFoundError on fonts due to Windows Font Blocking policy ([PR 273](https://github.com/spyder-ide/qtawesome/pull/273) by [@dalthviz](https://github.com/dalthviz))
+* [Issue 260](https://github.com/spyder-ide/qtawesome/issues/260) - Add `pre-commit` setup for formatting ([PR 265](https://github.com/spyder-ide/qtawesome/pull/265) by [@dalthviz](https://github.com/dalthviz))
+* [Issue 254](https://github.com/spyder-ide/qtawesome/issues/254) - Check error running `example.py` on Windows CI ([PR 277](https://github.com/spyder-ide/qtawesome/pull/277) by [@dalthviz](https://github.com/dalthviz))
+* [Issue 244](https://github.com/spyder-ide/qtawesome/issues/244) - Create script to allow users to install our fonts system-wide ([PR 271](https://github.com/spyder-ide/qtawesome/pull/271) by [@dalthviz](https://github.com/dalthviz))
+* [Issue 230](https://github.com/spyder-ide/qtawesome/issues/230) - Add Font Awesome 6 and remove deprecated Font Awesome 4 ([PR 274](https://github.com/spyder-ide/qtawesome/pull/274) by [@dalthviz](https://github.com/dalthviz))
+
+In this release 7 issues were closed.
+
+### Pull Requests Merged
+
+* [PR 277](https://github.com/spyder-ide/qtawesome/pull/277) - PR: Revert Qt binging conditional to run `example.py` and fix animations start/stop logic (CI), by [@dalthviz](https://github.com/dalthviz) ([254](https://github.com/spyder-ide/qtawesome/issues/254))
+* [PR 276](https://github.com/spyder-ide/qtawesome/pull/276) - PR: Update Codicon to 0.0.36, by [@dalthviz](https://github.com/dalthviz) ([275](https://github.com/spyder-ide/qtawesome/issues/275))
+* [PR 274](https://github.com/spyder-ide/qtawesome/pull/274) - PR: Add FontAwesome 6 icons (6.7.2) and change font update command, by [@dalthviz](https://github.com/dalthviz) ([230](https://github.com/spyder-ide/qtawesome/issues/230))
+* [PR 273](https://github.com/spyder-ide/qtawesome/pull/273) - PR: Return original font directory when font user installation load fails, by [@dalthviz](https://github.com/dalthviz) ([264](https://github.com/spyder-ide/qtawesome/issues/264))
+* [PR 272](https://github.com/spyder-ide/qtawesome/pull/272) - PR: Remove FontAwesome 4 font support, by [@dalthviz](https://github.com/dalthviz)
+* [PR 271](https://github.com/spyder-ide/qtawesome/pull/271) - PR: Add logic to install bundled fonts system wide on Windows, by [@dalthviz](https://github.com/dalthviz) ([244](https://github.com/spyder-ide/qtawesome/issues/244))
+* [PR 270](https://github.com/spyder-ide/qtawesome/pull/270) - PR: Add fallback to try to load fonts from the system ones and add method to check info about bundled fonts, by [@dalthviz](https://github.com/dalthviz)
+* [PR 268](https://github.com/spyder-ide/qtawesome/pull/268) - [pre-commit.ci] pre-commit autoupdate and autoupdate schedule change , by [@pre-commit-ci[bot]](https://github.com/apps/pre-commit-ci)
+* [PR 265](https://github.com/spyder-ide/qtawesome/pull/265) - PR: Add initial `pre-commit` config file and fix CI (macOS image label and codecov token errors), by [@dalthviz](https://github.com/dalthviz) ([260](https://github.com/spyder-ide/qtawesome/issues/260))
+
+In this release 9 pull requests were closed.
+
+
+----
+
+
 ## Version 1.3.1 (2024-03-27)
 
 ### Issues Closed
