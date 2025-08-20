@@ -87,14 +87,11 @@ jobs:
       - name: Install System Packages
         run: |
           sudo apt-get update --fix-missing
-          sudo apt-get install -qq pyqt6-dev-tools libxcb-xinerama0 xterm --fix-missing
-          # The following is to run PyQt6 in a window-less mode.
-          # From https://stackoverflow.com/a/77480795/8554611
-          # Stuff copied wildly from several stackoverflow posts
-          sudo apt-get install -qq xvfb libxkbcommon-x11-0 libxcb-icccm4 libxcb-image0 libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-xinerama0 libxcb-xinput0 libxcb-xfixes0 libxcb-shape0 libglib2.0-0 libgl1-mesa-dev --fix-missing
-          sudo apt-get install -qq '^libxcb.*-dev' libx11-xcb-dev libglu1-mesa-dev libxrender-dev libxi-dev libxkbcommon-dev libxkbcommon-x11-dev --fix-missing
-          # start xvfb in the background
-          sudo /usr/bin/Xvfb $DISPLAY -screen 0 1280x1024x24 &
+          sudo apt-get install -qq pyqt6-dev-tools --fix-missing
+      - name: Setup a headless display
+        uses: pyvista/setup-headless-display-action@v3
+        with:
+          qt: true
       - name: Install Conda
         uses: conda-incubator/setup-miniconda@v3
         with:
